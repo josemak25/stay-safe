@@ -1,13 +1,21 @@
-:root {
-  --font-family-base: "Noto Sans", sans-serif;
-  --font-color-dark: #173266;
-  --font-color-light: #ffffff;
-  --body-bg-color: #ffffff;
-}
-
 @font-face {
   font-family: "panton bold";
   src: url("../fonts/Panton-Bold.otf");
+}
+
+@font-face {
+  font-family: "chalkduster";
+  src: url("../fonts/Chalkduster.ttf");
+}
+
+:root {
+  --font-family-base: "Noto Sans", sans-serif;
+  --font-family-bold: "panton bold", sans-serif;
+  --font-family-chalkduster: "chalkduster", sans-serif;
+  --font-color-dark: #4b1c15;
+  --font-color-light: #ffffff;
+  --body-bg-color: #fffcef;
+  --body-action-color: #feb04e;
 }
 
 * {
@@ -35,25 +43,30 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  padding: 10px 40px;
-}
-
-/* APP LOGO  */
-
-.app-logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.app-logo h1 {
+/* APP CONTAINER HEADER  */
+
+.contanier-header {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.contanier-header h1 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 1px;
-  font-family: "panton bold";
+  font-family: var(--font-family-bold);
+  color: var(--body-action-color);
 }
 
-.app-logo span {
+.contanier-header span {
   width: 20px;
   height: 20px;
   display: inline-flex;
@@ -69,4 +82,75 @@ body {
   height: 20px;
   margin: 0px;
   padding: 0px;
+}
+
+/* APP CONTAINER BODY  */
+
+.contanier-body {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.contanier-body-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contanier-body-header img {
+  width: 60%;
+}
+
+.contanier-body-header-texts h3 {
+  font-size: 1.3rem;
+  font-family: var(--font-family-base);
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.contanier-body-header-texts h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: var(--font-family-bold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 10px 0px;
+}
+
+.contanier-body-header-texts p {
+  font-size: 0.8rem;
+  font-family: var(--font-family-base);
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.contanier-body-header-texts button {
+  width: 150px;
+  height: 40px;
+  font-size: 0.8rem;
+  color: var(--font-color-light);
+  font-family: var(--font-family-base);
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 50px;
+  background-color: var(--body-action-color);
+  margin-top: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+.contanier-body-header-texts button:hover {
+  transition: ease all 0.5s;
+  -webkit-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.5);
+}
+
+/* APP CONTAINER WALK THROUGH  */
+
+.contanier-body-walkthrough {
+  width: 70%;
+  margin-top: 10rem;
 }
