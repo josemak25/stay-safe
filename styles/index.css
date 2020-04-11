@@ -47,7 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   overflow-x: hidden;
 }
 
@@ -80,8 +80,8 @@ body {
 }
 
 .logo-icon {
-  width: 20px;
-  height: 20px;
+  width: 150px;
+  height: 50px;
   margin: 0px;
   padding: 0px;
 }
@@ -256,7 +256,69 @@ body {
   letter-spacing: 1px;
 }
 
+.contanier-sponsors {
+  width: 70%;
+  margin-top: 5rem;
+}
 
+.contanier-sponsors h1 {
+  word-spacing: 1.2px;
+  text-transform: uppercase;
+  font-family: var(--font-family-bold);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contanier-sponsors .contanier-sponsors-list {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.contanier-sponsors .contanier-sponsors-list .sponsor-logo-contanier {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: #fffcef;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.contanier-sponsors .contanier-sponsors-list .sponsor-logo-contanier:hover {
+  transition: ease all 0.5s;
+  -webkit-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.3);
+}
+
+.contanier-sponsors .sponsors-logo {
+  width: 55%;
+  height: 55%;
+}
+
+.contanier-footer {
+  width: 70%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  border-top: 0.8px rgba(75, 28, 21, 0.5) solid;
+}
+
+.contanier-footer p {
+  font-size: 0.9rem;
+  font-family: var(--font-family-base);
+  letter-spacing: 0.3px;
+  padding: 5px 0px;
+  text-align: center;
+}
 
 @media screen and (min-width: 768px) {
   .container-header-vector {
@@ -339,12 +401,12 @@ body {
     display: flex;
     justify-content: center;
   }
-  
+
   .walkthrough-section.help-section .walkthrough--illustrator img {
     width: 75%;
   }
 
-  .walkthrough-section.mg-top-2 { 
+  .walkthrough-section.mg-top-2 {
     margin-top: 2rem;
   }
 }
