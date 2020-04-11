@@ -120,8 +120,6 @@ body {
 }
 
 .contanier-body-header-texts h1,
-.walkthrough-four .walkthrough-four-text h1,
-.walkthrough-five .walkthrough-five-text h1,
 .contanier-body-walkthrough .how-to-help {
   font-size: 3rem;
   font-weight: 900;
@@ -140,9 +138,7 @@ body {
 }
 
 .contanier-body-header-texts button,
-.contanier-body-walkthrough .get-mask-actions div button,
-.walkthrough-six .walkthrough-six-text button,
-.walkthrough-seven .walkthrough-seven-text button {
+.contanier-body-walkthrough .get-mask-actions div button {
   width: 150px;
   height: 40px;
   font-size: 0.8rem;
@@ -180,11 +176,17 @@ body {
 
 .walkthrough-section .walkthrough--text h1 {
   font-size: 1.6rem;
+  font-weight: 900;
+  font-family: var(--font-family-bold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 10px 0px;
 }
 
 .walkthrough-section .walkthrough--text h3 {
   font-size: 1rem;
   font-family: var(--font-family-chalkduster);
+  color: var(--body-action-color);
 }
 
 .walkthrough-section .walkthrough--text p {
@@ -231,6 +233,30 @@ body {
   letter-spacing: 0.5px;
   padding: 10px 0px;
 }
+
+.walkthrough-section.help-section .walkthrough--text button {
+  width: 150px;
+  height: 40px;
+  font-size: 0.8rem;
+  color: var(--font-color-light);
+  font-family: var(--font-family-base);
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 50px;
+  background-color: var(--body-action-color);
+  margin-top: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+.walkthrough-section.help-section .walkthrough--text h3 {
+  word-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
 
 @media screen and (min-width: 768px) {
   .container-header-vector {
@@ -305,8 +331,20 @@ body {
   }
 
   .container-get-actions_vector {
-    transform: scale(4, 3) rotate(-5deg);
-    left: -100px;
+    display: none;
   }
 
+  .walkthrough-section.help-section .walkthrough--illustrator {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .walkthrough-section.help-section .walkthrough--illustrator img {
+    width: 75%;
+  }
+
+  .walkthrough-section.mg-top-2 { 
+    margin-top: 2rem;
+  }
 }
