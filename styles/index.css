@@ -168,38 +168,35 @@ body {
   position: relative;
 }
 
-.walkthrough-one {
-  display: flex;
-  height: 300px;
-  position: relative;
-}
-
-.walkthrough-one .walkthrough-one-illustrator {
-  flex: 0.7;
-  display: flex;
-  justify-content: center;
-}
-
-.walkthrough-one-illustrator img:nth-child(1) {
-  width: 250px;
-  height: 300px;
-  transform: scale(1.2) rotate(190deg);
-  position: absolute;
-  left: 30px;
-  bottom: -30px;
-  z-index: -1;
-}
-
-.walkthrough-four,
-.walkthrough-five {
+.walkthrough-section {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
   position: relative;
 }
 
+.walkthrough-section .walkthrough--text h1 {
+  font-size: 1.6rem;
+}
+
+.walkthrough-section .walkthrough--text h3 {
+  font-size: 1rem;
+  font-family: var(--font-family-chalkduster);
+}
+
+.walkthrough-section .walkthrough--text p {
+  padding: 10px 0px;
+  text-align: left;
+}
+
+.walkthrough-section .walkthrough--illustrator {
+  margin: 4rem 0;
+}
+
 @media screen and (min-width: 768px) {
-  .contanier-header, .contanier-body {
+  .contanier-header,
+  .contanier-body,
+  .contanier-body-walkthrough {
     width: 80%;
   }
 
@@ -213,10 +210,26 @@ body {
     width: 60%;
   }
 
-  .walkthrough-four,
-.walkthrough-five {
-  flex-direction: row;
-  margin-top: 12rem;
-  position: relative;
-}
+  .walkthrough-section {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8rem;
+    position: relative;
+  }
+
+  .walkthrough-section .walkthrough--text {
+    flex: 0 0 60%;
+    padding-right: 4rem;
+  }
+
+  .walkthrough-section .walkthrough--illustrator {
+    flex: 0 0 40%;
+    margin: 0;
+  }
+
+  .walkthrough-section.img-left .walkthrough--text {
+    padding-left: 4rem;
+    padding-right: 0;
+    order: 1;
+  }
 }
