@@ -161,6 +161,43 @@ body {
   box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.5);
 }
 
+/* APP CONTAINER WALK THROUGH  */
+.contanier-body-walkthrough {
+  margin-top: 5rem;
+  padding: 20px;
+  position: relative;
+}
+
+.walkthrough-one {
+  display: flex;
+  height: 300px;
+  position: relative;
+}
+
+.walkthrough-one .walkthrough-one-illustrator {
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+}
+
+.walkthrough-one-illustrator img:nth-child(1) {
+  width: 250px;
+  height: 300px;
+  transform: scale(1.2) rotate(190deg);
+  position: absolute;
+  left: 30px;
+  bottom: -30px;
+  z-index: -1;
+}
+
+.walkthrough-four,
+.walkthrough-five {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .contanier-header, .contanier-body {
     width: 80%;
@@ -175,4 +212,11 @@ body {
   .contanier-body-header img {
     width: 60%;
   }
+
+  .walkthrough-four,
+.walkthrough-five {
+  flex-direction: row;
+  margin-top: 12rem;
+  position: relative;
+}
 }
