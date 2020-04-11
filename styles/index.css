@@ -121,7 +121,8 @@ body {
 
 .contanier-body-header-texts h1,
 .walkthrough-four .walkthrough-four-text h1,
-.walkthrough-five .walkthrough-five-text h1 {
+.walkthrough-five .walkthrough-five-text h1,
+.contanier-body-walkthrough .how-to-help {
   font-size: 3rem;
   font-weight: 900;
   font-family: var(--font-family-bold);
@@ -138,7 +139,8 @@ body {
   opacity: 0.9;
 }
 
-.contanier-body-header-texts button {
+.contanier-body-header-texts button,
+.contanier-body-walkthrough .get-mask-actions div button {
   width: 150px;
   height: 40px;
   font-size: 0.8rem;
@@ -231,7 +233,8 @@ body {
 .walkthrough-two .walkthrough-two-text h3,
 .walkthrough-three .walkthrough-three-text h3,
 .walkthrough-four .walkthrough-four-text h3,
-.walkthrough-five .walkthrough-five-text h3 {
+.walkthrough-five .walkthrough-five-text h3,
+.walkthrough-six .walkthrough-six-text h3 {
   font-size: 0.6rem;
   font-family: var(--font-family-base);
   color: var(--body-action-color);
@@ -269,7 +272,8 @@ body {
 
 .walkthrough-two .walkthrough-two-text p,
 .walkthrough-four .walkthrough-four-text p,
-.walkthrough-five .walkthrough-five-text p {
+.walkthrough-five .walkthrough-five-text p,
+.walkthrough-six .walkthrough-six-text p {
   width: 50%;
 }
 
@@ -310,7 +314,8 @@ body {
 .walkthrough-two .walkthrough-two-illustrator p,
 .walkthrough-three .walkthrough-three-illustrator p,
 .walkthrough-four .walkthrough-four-text p,
-.walkthrough-five .walkthrough-five-text p {
+.walkthrough-five .walkthrough-five-text p,
+.walkthrough-six .walkthrough-six-text p {
   font-size: 0.7rem;
   font-family: var(--font-family-base);
   letter-spacing: 0.5px;
@@ -345,7 +350,8 @@ body {
 
 .walkthrough-three,
 .walkthrough-four,
-.walkthrough-five {
+.walkthrough-five,
+.walkthrough-six {
   display: flex;
   flex-direction: column;
   margin-top: 12rem;
@@ -353,7 +359,8 @@ body {
 }
 
 .walkthrough-four,
-.walkthrough-five {
+.walkthrough-five,
+.walkthrough-six {
   flex-direction: row;
 }
 
@@ -363,26 +370,80 @@ body {
 }
 
 .walkthrough-four .walkthrough-four-text h3,
-.walkthrough-five .walkthrough-five-text h3 {
+.walkthrough-five .walkthrough-five-text h3,
+.walkthrough-six .walkthrough-six-text h3 {
   font-size: 1rem;
   font-family: var(--font-family-chalkduster);
 }
 
 .walkthrough-four .walkthrough-four-text p,
-.walkthrough-five .walkthrough-five-text p {
+.walkthrough-five .walkthrough-five-text p,
+.walkthrough-six .walkthrough-six-text p {
   width: 60%;
   padding: 10px 0px;
   text-align: left;
 }
 
 .walkthrough-four-illustrator,
-.walkthrough-five-illustrator {
+.walkthrough-five-illustrator,
+.walkthrough-six-illustrator {
   width: 33%;
   position: absolute;
   right: 0;
   align-self: center;
 }
 
-.walkthrough-five {
+.walkthrough-five,
+.walkthrough-six {
   margin-top: 5rem;
+}
+
+.contanier-body-walkthrough .get-mask-actions {
+  width: 100%;
+  margin-top: 7rem;
+  display: flex;
+}
+
+.contanier-body-walkthrough .get-mask-actions div {
+  flex: 1;
+  text-align: center;
+}
+
+.contanier-body-walkthrough .get-mask-actions div p {
+  font-size: 1.2rem;
+  font-family: var(--font-family-bold);
+  letter-spacing: 0.5px;
+  padding: 10px 0px;
+}
+
+.contanier-body-walkthrough .get-mask-actions div button {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+  text-transform: none;
+  transition: ease all 0.5s;
+  -webkit-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.5);
+}
+
+.contanier-body-walkthrough .get-mask-actions div button:hover {
+  transition: ease all 0.5s;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.contanier-body-walkthrough .how-to-help {
+  margin-top: 10rem;
+}
+
+.walkthrough-six .walkthrough-six-text h2 {
+  width: 60%;
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-family: var(--font-family-bold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 15px;
 }
