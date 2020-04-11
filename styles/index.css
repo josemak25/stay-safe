@@ -13,8 +13,10 @@
   --font-family-bold: "panton bold", sans-serif;
   --font-family-chalkduster: "chalkduster", sans-serif;
   --font-color-dark: #4b1c15;
+  --font-red-color: #a20025;
   --font-color-light: #ffffff;
   --body-bg-color: #f5f2ed;
+  --body-bg-grey-color: #fbfbfb;
   --body-action-color: #feb04e;
 }
 
@@ -31,6 +33,10 @@ img {
   width: 100%;
 }
 
+h1 {
+  color: var(--font-red-color);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -38,7 +44,7 @@ body {
   font-family: var(--font-family-base);
   font-size: 1em;
   color: var(--font-color-dark);
-  background-color: var(--body-bg-color);
+  background-color: var(--body-bg-grey-color);
   overflow-x: hidden;
 }
 
@@ -112,10 +118,10 @@ body {
 }
 
 .contanier-body-header-texts h3 {
-  font-size: 1.3rem;
-  font-family: var(--font-family-base);
+  font-size: 1.1rem;
+  font-family: var(--font-family-chalkduster);
+  color: var(--body-action-color);
   font-weight: 600;
-  text-transform: capitalize;
   letter-spacing: 1px;
 }
 
@@ -130,7 +136,6 @@ body {
 }
 
 .contanier-body-header-texts p {
-  font-size: 0.8rem;
   font-family: var(--font-family-base);
   text-transform: capitalize;
   letter-spacing: 0.5px;
@@ -199,6 +204,19 @@ body {
   padding: 0 1rem;
 }
 
+.walkthrough-section.walkthrough-col
+  .walkthrough-col-illustrator
+  .illustrator
+  h1 {
+  font-size: 0.8rem;
+  font-family: var(--font-family-base);
+  font-weight: 600;
+  word-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0px;
+}
+
 .container-prevention_vector {
   width: 100%;
   position: absolute;
@@ -257,7 +275,7 @@ body {
 }
 
 .contanier-sponsors {
-  margin-top: 5rem;    
+  margin-top: 5rem;
   width: 100%;
   padding: 0 20px;
 }
@@ -390,6 +408,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 1rem;
   }
 
   .container-get-actions_vector {
