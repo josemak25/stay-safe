@@ -24,8 +24,11 @@
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
-  box-sizing: content-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
 }
 
 body {
@@ -36,15 +39,10 @@ body {
   font-size: 1em;
   color: var(--font-color-dark);
   background-color: var(--body-bg-color);
-  /* background-image: url("../images/app_background.svg"); */
-  overflow-x: hidden;
 }
 
 /* APP CONTAINER  */
-
 .container {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,12 +50,11 @@ body {
 }
 
 /* APP CONTAINER HEADER  */
-
 .contanier-header {
-  width: 70%;
+  width: 100%;
   display: flex;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px 20px;
 }
 
 .contanier-header h1 {
@@ -88,28 +85,27 @@ body {
 }
 
 /* APP CONTAINER BODY  */
-
 .contanier-body {
-  width: 70%;
   margin-top: 30px;
+  padding: 20px;
 }
 
 .container-header-vector {
   width: 100%;
   position: absolute;
-  bottom: 100px;
-  transform: scale(2, 1);
+  /* transform: scale(2, 1); */
   z-index: -1;
 }
 
 .contanier-body-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
 .contanier-body-header img {
-  width: 60%;
+  margin-top: 4rem;
 }
 
 .contanier-body-header-texts h3 {
@@ -165,312 +161,18 @@ body {
   box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.5);
 }
 
-/* APP CONTAINER WALK THROUGH  */
+@media screen and (min-width: 768px) {
+  .contanier-header, .contanier-body {
+    width: 80%;
+  }
 
-.contanier-body-walkthrough {
-  width: 60%;
-  margin-top: 10rem;
-  position: relative;
-}
+  .contanier-body-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.walkthrough-one {
-  display: flex;
-  height: 300px;
-  position: relative;
-}
-
-.walkthrough-one .walkthrough-one-illustrator {
-  flex: 0.7;
-  display: flex;
-  justify-content: center;
-}
-
-.walkthrough-one-illustrator img:nth-child(1) {
-  width: 250px;
-  height: 300px;
-  transform: scale(1.2) rotate(190deg);
-  position: absolute;
-  left: 30px;
-  bottom: -30px;
-  z-index: -1;
-}
-
-.walkthrough-one-illustrator img:nth-child(2) {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 150px;
-  left: -30px;
-}
-
-.walkthrough-one-illustrator img:nth-child(3) {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 120px;
-  right: -30px;
-}
-
-.walkthrough-one-illustrator img:nth-child(4) {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 200px;
-  right: 20px;
-}
-
-.walkthrough-one-illustrator img:nth-child(5) {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 50px;
-  right: 120px;
-}
-
-.walkthrough-one .walkthrough-one-text {
-  flex: 1;
-  align-self: center;
-}
-
-.walkthrough-one .walkthrough-one-text h3,
-.walkthrough-two .walkthrough-two-text h3,
-.walkthrough-three .walkthrough-three-text h3,
-.walkthrough-four .walkthrough-four-text h3,
-.walkthrough-five .walkthrough-five-text h3,
-.walkthrough-six .walkthrough-six-text h3,
-.walkthrough-seven .walkthrough-seven-text h3 {
-  font-size: 0.6rem;
-  font-family: var(--font-family-base);
-  color: var(--body-action-color);
-  word-spacing: 1.2px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.walkthrough-one .walkthrough-one-text h1,
-.walkthrough-two .walkthrough-two-text h1,
-.walkthrough-three .walkthrough-three-text h1 {
-  font-size: 1rem;
-  font-family: var(--font-family-base);
-  font-weight: 600;
-  word-spacing: 1.2px;
-  text-transform: capitalize;
-  padding: 5px 0px;
-}
-
-.walkthrough-one .walkthrough-one-text p,
-.walkthrough-two .walkthrough-two-text p,
-.walkthrough-three .walkthrough-three-text p {
-  font-size: 0.8rem;
-  font-family: var(--font-family-base);
-  letter-spacing: 0.5px;
-  padding: 10px 0px;
-  width: 90%;
-  opacity: 0.9;
-}
-
-.walkthrough-two {
-  margin-top: 4rem;
-}
-
-.walkthrough-two .walkthrough-two-text p,
-.walkthrough-four .walkthrough-four-text p,
-.walkthrough-five .walkthrough-five-text p,
-.walkthrough-six .walkthrough-six-text p,
-.walkthrough-seven .walkthrough-seven-text p {
-  width: 50%;
-}
-
-.walkthrough-two .walkthrough-two-illustrator,
-.walkthrough-three .walkthrough-three-illustrator {
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.walkthrough-two .walkthrough-two-illustrator div,
-.walkthrough-three .walkthrough-three-illustrator div {
-  flex: 1;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.walkthrough-two .walkthrough-two-illustrator img,
-.walkthrough-three .walkthrough-three-illustrator img {
-  width: 200px;
-  height: 200px;
-}
-
-.walkthrough-two .walkthrough-two-illustrator h1,
-.walkthrough-three .walkthrough-three-illustrator h1 {
-  font-size: 0.8rem;
-  font-family: var(--font-family-base);
-  font-weight: 600;
-  word-spacing: 1.2px;
-  text-transform: capitalize;
-  text-align: center;
-  padding: 20px 0px;
-}
-
-.walkthrough-two .walkthrough-two-illustrator p,
-.walkthrough-three .walkthrough-three-illustrator p,
-.walkthrough-four .walkthrough-four-text p,
-.walkthrough-five .walkthrough-five-text p,
-.walkthrough-six .walkthrough-six-text p,
-.walkthrough-seven .walkthrough-seven-text p {
-  font-size: 0.7rem;
-  font-family: var(--font-family-base);
-  letter-spacing: 0.5px;
-  text-align: center;
-  padding: 0px 20px;
-  opacity: 0.9;
-  align-self: flex-end;
-}
-
-.container-prevention_vector {
-  width: 100%;
-  position: absolute;
-  transform: scale(4, 3.5) rotate(-10deg);
-  top: 1300px;
-  right: 500px;
-  z-index: -1;
-}
-
-.walkthrough-three .walkthrough-three-text p {
-  width: 100%;
-}
-
-.walkthrough-three .walkthrough-three-text {
-  width: 50%;
-  align-self: flex-end;
-}
-
-.walkthrough-three .walkthrough-three-illustrator img {
-  width: 300px;
-  height: 300px;
-}
-
-.walkthrough-three,
-.walkthrough-four,
-.walkthrough-five,
-.walkthrough-six,
-.walkthrough-seven {
-  display: flex;
-  flex-direction: column;
-  margin-top: 12rem;
-  position: relative;
-}
-
-.walkthrough-four,
-.walkthrough-five,
-.walkthrough-six,
-.walkthrough-seven {
-  flex-direction: row;
-}
-
-.walkthrough-four .walkthrough-four-text h1,
-.walkthrough-five .walkthrough-five-text h1 {
-  font-size: 1.6rem;
-}
-
-.walkthrough-four .walkthrough-four-text h3,
-.walkthrough-five .walkthrough-five-text h3,
-.walkthrough-six .walkthrough-six-text h3,
-.walkthrough-seven .walkthrough-seven-text h3 {
-  font-size: 1rem;
-  font-family: var(--font-family-chalkduster);
-}
-
-.walkthrough-four .walkthrough-four-text p,
-.walkthrough-five .walkthrough-five-text p,
-.walkthrough-six .walkthrough-six-text p,
-.walkthrough-seven .walkthrough-seven-text p {
-  width: 60%;
-  padding: 10px 0px;
-  text-align: left;
-}
-
-.walkthrough-four-illustrator,
-.walkthrough-five-illustrator,
-.walkthrough-six-illustrator,
-.walkthrough-seven-illustrator {
-  width: 33%;
-  position: absolute;
-  right: 0;
-  align-self: center;
-}
-
-.walkthrough-five,
-.walkthrough-six,
-.walkthrough-seven {
-  margin-top: 5rem;
-}
-
-.contanier-body-walkthrough .get-mask-actions {
-  width: 100%;
-  margin-top: 7rem;
-  display: flex;
-}
-
-.contanier-body-walkthrough .get-mask-actions div {
-  flex: 1;
-  text-align: center;
-}
-
-.contanier-body-walkthrough .get-mask-actions div p {
-  font-size: 1.2rem;
-  font-family: var(--font-family-bold);
-  letter-spacing: 0.5px;
-  padding: 10px 0px;
-}
-
-.contanier-body-walkthrough .get-mask-actions div button,
-.walkthrough-six .walkthrough-six-text button,
-.walkthrough-seven .walkthrough-seven-text button {
-  width: 200px;
-  height: 50px;
-  margin-top: 10px;
-  text-transform: none;
-  transition: ease all 0.5s;
-  -webkit-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.5);
-}
-
-.contanier-body-walkthrough .get-mask-actions div button:hover,
-.walkthrough-six .walkthrough-six-text button:hover,
-.walkthrough-seven .walkthrough-seven-text button:hover {
-  transition: ease all 0.5s;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-.contanier-body-walkthrough .how-to-help {
-  margin-top: 10rem;
-}
-
-.walkthrough-six .walkthrough-six-text p,
-.walkthrough-seven .walkthrough-seven-text p {
-  padding: 20px 0px;
-}
-
-.walkthrough-six .walkthrough-six-text h2,
-.walkthrough-seven .walkthrough-seven-text h2 {
-  width: 60%;
-  font-size: 1.6rem;
-  font-weight: 900;
-  font-family: var(--font-family-bold);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  padding-top: 15px;
-}
-
-.walkthrough-six-illustrator,
-.walkthrough-seven-illustrator {
-  width: 28%;
+  .contanier-body-header img {
+    width: 60%;
+  }
 }
