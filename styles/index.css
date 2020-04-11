@@ -206,6 +206,32 @@ body {
   z-index: -1;
 }
 
+.container-get-actions_vector {
+  width: 100%;
+  position: absolute;
+  transform: scale(4, 3.5) rotate(-10deg);
+  top: 3350px;
+  z-index: -1;
+}
+
+.contanier-body-walkthrough .get-mask-actions {
+  width: 100%;
+  margin: 10rem 0;
+  display: flex;
+}
+
+.contanier-body-walkthrough .get-mask-actions div {
+  flex: 1;
+  text-align: center;
+}
+
+.contanier-body-walkthrough .get-mask-actions div p {
+  font-size: 1.2rem;
+  font-family: var(--font-family-bold);
+  letter-spacing: 0.5px;
+  padding: 10px 0px;
+}
+
 @media screen and (min-width: 768px) {
   .container-header-vector {
     height: unset;
@@ -276,6 +302,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .container-get-actions_vector {
+    transform: scale(4, 3) rotate(-5deg);
+    left: -100px;
   }
 
 }
