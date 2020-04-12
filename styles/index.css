@@ -12,7 +12,8 @@
   --font-family-base: "Noto Sans", sans-serif;
   --font-family-bold: "panton bold", sans-serif;
   --font-family-chalkduster: "chalkduster", sans-serif;
-  --font-color-dark: #4b1c15;
+  --font-color-dark: #111111;
+  /* --font-color-dark: #4b1c15; */
   --font-red-color: #a20025;
   --font-color-light: #ffffff;
   --body-bg-color: #f5f2ed;
@@ -197,6 +198,10 @@ body {
 .walkthrough-section .walkthrough--text p {
   padding: 10px 0px;
   text-align: left;
+}
+
+.walkthrough-section .walkthrough--text p strong {
+  font-weight: 900;
 }
 
 .walkthrough-section .walkthrough--illustrator {
