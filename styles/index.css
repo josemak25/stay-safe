@@ -13,7 +13,7 @@
   --font-family-bold: "panton bold", sans-serif;
   --font-family-chalkduster: "chalkduster", sans-serif;
   --font-color-dark: #111111;
-  /* --font-color-dark: #4b1c15; */
+  --body-bg-red: rgba(162, 0, 37, 0.1);
   --font-red-color: #a20025;
   --font-color-light: #ffffff;
   --body-bg-color: #f5f2ed;
@@ -45,7 +45,7 @@ body {
   font-family: var(--font-family-base);
   font-size: 1em;
   color: var(--font-color-dark);
-  background-color: var(--body-bg-grey-color);
+  background-color: var(--body-bg-red);
   overflow-x: hidden;
 }
 
@@ -153,13 +153,14 @@ body {
   font-weight: 600;
   text-transform: capitalize;
   border-radius: 50px;
-  background-color: var(--body-action-color);
+  background-color: var(--font-red-color);
   margin-top: 30px;
   cursor: pointer;
   outline: none;
 }
 
-.contanier-body-header-texts button:hover {
+.contanier-body-header-texts button:hover,
+.walkthrough-section.help-section .walkthrough--text button:hover {
   transition: ease all 0.5s;
   -webkit-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.75);
@@ -266,7 +267,7 @@ body {
   font-weight: 600;
   text-transform: capitalize;
   border-radius: 50px;
-  background-color: var(--body-action-color);
+  background-color: var(--font-red-color);
   margin-top: 30px;
   cursor: pointer;
   outline: none;
