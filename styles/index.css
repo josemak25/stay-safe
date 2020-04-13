@@ -30,6 +30,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   width: 100%;
 }
@@ -91,6 +95,39 @@ body {
   height: 50px;
   margin: 0px;
   padding: 0px;
+}
+
+.contanier-header .menu {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  align-self: flex-end;
+  /* border: 1px black solid; */
+}
+
+.contanier-header .menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.contanier-header .menu ul li {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.contanier-header .menu ul li a {
+  font-size: 1rem;
+  font-family: var(--font-family-chalkduster);
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 5px;
+}
+
+.contanier-header .menu ul li a:hover {
+  transition: ease all 0.2s;
+  border-bottom: 4px var(--font-red-color) solid;
 }
 
 /* APP CONTAINER BODY  */
@@ -359,6 +396,33 @@ body {
   letter-spacing: 0.3px;
   padding: 5px 0px;
   text-align: center;
+}
+
+.container .scroll_up {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  cursor: pointer;
+  border-radius: 50px;
+  display: none;
+  -webkit-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 11px 23px -14px rgba(0, 0, 0, 0.3);
+}
+
+.container .scroll_up:hover {
+  border: 1px rgba(0, 0, 0, 0.5) solid;
+}
+
+.container .scroll_up img {
+  width: 80px;
+  height: 60px;
 }
 
 @media screen and (min-width: 768px) {

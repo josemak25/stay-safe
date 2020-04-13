@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="288.742" viewBox="0 0 120 288.742">
+  <g id="scroll_up" transform="translate(4886 -2006.258)">
+    <g id="mouse">
+      <g id="Rectangle_63" data-name="Rectangle 63" transform="translate(-4886 2075)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-width="8">
+        <rect width="120" height="220" rx="60" stroke="none"/>
+        <rect x="4" y="4" width="112" height="212" rx="56" fill="none"/>
+      </g>
+      <rect id="Rectangle_64" data-name="Rectangle 64" width="15" height="40" rx="7.5" transform="translate(-4833 2214)"/>
+    </g>
+    <g id="angle_pointer">
+      <line id="Line_1" data-name="Line 1" x1="30.955" y2="30.371" transform="translate(-4856.5 2010.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="6"/>
+      <line id="Line_2" data-name="Line 2" x1="31.045" y1="32" transform="translate(-4825.545 2010.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="6"/>
+    </g>
+  </g>
+</svg>
