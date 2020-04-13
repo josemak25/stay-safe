@@ -114,8 +114,15 @@ body {
   justify-content: space-between;
 }
 
-.contanier-body-header img {
-  margin-top: 4rem;
+.contanier-body-header .masthead-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 0 0 40%;
+  margin-left: 2rem;
+  border-radius: 100%;
+  box-shadow: 0 20px 5px rgba(162, 0, 37, 0.1);
+  overflow: hidden;
 }
 
 .contanier-body-header-texts h3 {
@@ -157,6 +164,11 @@ body {
   margin-top: 30px;
   cursor: pointer;
   outline: none;
+}
+
+.contanier-body-walkthrough .get-mask-actions div button a {
+  text-decoration: none;
+  color: var(--font-color-light);
 }
 
 .contanier-body-header-texts button:hover,
@@ -363,7 +375,7 @@ body {
   }
 
   .contanier-body-header img {
-    width: 60%;
+    width: 100%;
   }
 
   .walkthrough-section {
