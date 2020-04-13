@@ -167,6 +167,11 @@ body {
 }
 
 .contanier-body-walkthrough .get-mask-actions div button a {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: var(--font-color-light);
 }
