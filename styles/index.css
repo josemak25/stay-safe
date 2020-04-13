@@ -166,6 +166,11 @@ body {
   outline: none;
 }
 
+.contanier-body-walkthrough .get-mask-actions div button a {
+  text-decoration: none;
+  color: var(--font-color-light);
+}
+
 .contanier-body-header-texts button:hover,
 .walkthrough-section.help-section .walkthrough--text button:hover {
   transition: ease all 0.5s;
