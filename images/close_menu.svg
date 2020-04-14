@@ -1,0 +1,9 @@
+<svg id="Close-2" data-name="Close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Close" d="M13.827,15.241,7.767,9.181,1.707,15.241A1,1,0,0,1,.293,13.827l6.06-6.06L.293,1.707A1,1,0,0,1,1.707.293l6.059,6.06,6.06-6.06a1,1,0,0,1,1.414,1.415L9.181,7.767l6.059,6.06a1,1,0,1,1-1.414,1.414Z" transform="translate(2.233 1.912)" fill="#1f1f1f"/>
+    </clipPath>
+  </defs>
+  <rect id="Surface" width="20" height="20" fill="none"/>
+  <path id="Close-3" data-name="Close" d="M13.827,15.241,7.767,9.181,1.707,15.241A1,1,0,0,1,.293,13.827l6.06-6.06L.293,1.707A1,1,0,0,1,1.707.293l6.059,6.06,6.06-6.06a1,1,0,0,1,1.414,1.415L9.181,7.767l6.059,6.06a1,1,0,1,1-1.414,1.414Z" transform="translate(2.233 1.912)" fill="#1f1f1f"/>
+</svg>

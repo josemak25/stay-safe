@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="18" viewBox="0 0 17 18">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="List" d="M0,14c0-1.1.626-2,1.4-2s1.4.9,1.4,2-.626,2-1.4,2S0,15.1,0,14Zm5.2,1a1,1,0,1,1,0-2H13a1,1,0,1,1,0,2ZM0,8C0,6.895.626,6,1.4,6s1.4.895,1.4,2-.626,2-1.4,2S0,9.1,0,8ZM5.2,9a1,1,0,0,1,0-2H13a1,1,0,1,1,0,2ZM0,2C0,.9.626,0,1.4,0S2.8.9,2.8,2,2.174,4,1.4,4,0,3.1,0,2ZM5.2,3a1,1,0,0,1,0-2H13a1,1,0,0,1,0,2Z" transform="translate(0.089)" fill="#1f1f1f"/>
+    </clipPath>
+  </defs>
+  <g id="List-2" data-name="List" transform="translate(-0.089)">
+    <rect id="Surface" width="14" height="14" transform="translate(0.089)" fill="none"/>
+    <path id="List-3" data-name="List" d="M1,14a1,1,0,0,1,0-2H16a1,1,0,0,1,0,2ZM1,8A1,1,0,0,1,1,6H16a1,1,0,1,1,0,2ZM1,2A1,1,0,0,1,1,0H16a1,1,0,1,1,0,2Z" transform="translate(0.089 3)" fill="#1f1f1f"/>
+  </g>
+</svg>
